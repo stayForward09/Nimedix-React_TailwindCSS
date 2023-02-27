@@ -3,6 +3,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    requireConfigFile: false,
   },
   extends: [
     'plugin:react/recommended',
@@ -14,7 +15,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'warn',
     'react/prop-types': 'off',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',

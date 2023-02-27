@@ -1,5 +1,8 @@
 {
   "cSpell.words": [
     "nimedix"
-  ]
+  ],
+  "eslint.workingDirectories": [
+    {"mode": "auto"}
+],
 }
