@@ -5,6 +5,9 @@ import Home from '../pages/app/Home'
 import Services from '../pages/app/Services'
 import OurToken from '../pages/app/OurToken'
 import About from '../pages/app/About'
+import Login from '../pages/auth/Login'
+import Signup from '../pages/auth/Signup'
+
 import ComingSoon from '../pages/ComingSoon'
 
 const AppRoutes = () => {
@@ -18,9 +21,9 @@ const AppRoutes = () => {
           <Route path="our-token" element={<OurToken />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<ComingSoon />} />
-          <Route path="login" element={<ComingSoon />} />
-          <Route path="signup" element={<ComingSoon />} />
         </Route>
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/signup" exact element={<ComingSoon />}></Route>
       </Routes>
     </BrowserRouter>
   )
