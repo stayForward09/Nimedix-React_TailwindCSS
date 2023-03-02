@@ -7,7 +7,8 @@ import OurToken from '../pages/app/OurToken'
 import About from '../pages/app/About'
 import Login from '../pages/auth/Login'
 import Signup from '../pages/auth/Signup'
-
+import Choose from '../pages/auth/Signup/Choose'
+import Register from '../pages/auth/Signup/Register'
 import ComingSoon from '../pages/ComingSoon'
 
 const AppRoutes = () => {
@@ -23,7 +24,11 @@ const AppRoutes = () => {
           <Route path="*" element={<ComingSoon />} />
         </Route>
         <Route path="/login" exact element={<Login />} />
-        <Route path="/signup" exact element={<ComingSoon />}></Route>
+        <Route path="/signup" element={<Signup />}>
+          <Route path="/" element={<Choose />} />
+          <Route path="/choose" element={<Choose />} />
+          <Route path="/register" element={<Register />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
