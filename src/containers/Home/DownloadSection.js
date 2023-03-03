@@ -38,7 +38,7 @@ const DownloadSection = () => {
               />
             </div>
           </div>
-          <div className="bg-primary-light rounded-xl">
+          <div className="bg-primary-light rounded-3xl">
             <img
               src={DownloadBgIcon}
               alt="download-bg"

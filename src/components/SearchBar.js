@@ -20,7 +20,7 @@ const SearchBar = (props) => {
             />
           </div>
           <button className="py-2 px-4 rounded-full bg-primary">
-            <div className="flex flex-direction items-center">
+            <div className="flex items-center">
               <p className="p-0 text-white">Send</p>
               <img src={ArrowIcon} alt="btn-icon" className="w-4 h-4 ml-2" />
             </div>

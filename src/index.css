@@ -29,3 +29,11 @@
   background-position: right bottom;
   background-size: contain;
 }
+
+#signup-banner {
+  background-image: url('./assets/images/banner/banner_bg_angles.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-size: contain;
+}
