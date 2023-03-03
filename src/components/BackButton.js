@@ -3,12 +3,12 @@ import React from 'react'
 const BackButton = ({ onClick }) => {
   return (
     <button
-      className="p-2"
+      className="p-0"
       onClick={() => {
         onClick()
       }}
     >
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
