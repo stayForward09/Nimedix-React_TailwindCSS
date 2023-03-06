@@ -11,7 +11,6 @@ const AppHeader = () => {
   const location = useLocation()
   const [onSearch, setOnSearch] = useState(false)
   const [currentPath, setCurrentPath] = useState()
-  const [onMobile, setOnMobile] = useState(false)
 
   const toggle = () => {
     setOnSearch((prev) => {
@@ -30,9 +29,14 @@ const AppHeader = () => {
           <div className="col-span-2 flex justify-between">
             {/* logo */}
             <div id="header-nav-logo">
-              <a href="/">
+              <button
+                className="p-0"
+                onClick={() => {
+                  navigate('/')
+                }}
+              >
                 <img src={Logo} alt="logo-nimedix" className="h-12" />
-              </a>
+              </button>
             </div>
             {/* primary nav */}
             <div className="hidden lg:flex items-center">
@@ -82,18 +86,23 @@ const AppHeader = () => {
                 />
               )}
             </button>
-            <a
-              href="/login"
+            <hr className="border-[1px] border-grey-light border-opacity-50 h-full" />
+            <button
               className="lg:py-3 py-1 lg:px-6 px-2 text-dark bg-secondary rounded-full"
+              onClick={() => {
+                navigate('/login')
+              }}
             >
               Login
-            </a>
-            <a
-              href="/signup"
+            </button>
+            <button
               className="lg:py-3 py-1 lg:px-6 px-2 text-primary bg-white rounded-full"
+              onClick={() => {
+                navigate('/signup')
+              }}
             >
               Sign up
-            </a>
+            </button>
           </div>
           {/* mobile button */}
           <div className="lg:hidden flex items-center space-x-2 justify-end">
@@ -113,6 +122,7 @@ const AppHeader = () => {
                 />
               )}
             </button>
+            <hr className="border-[1px] border-grey-light border-opacity-50 h-full" />
             <button className="md:p-2 p-1 bg-success-light rounded-full bg-opacity-10 hover:bg-opacity-50 transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

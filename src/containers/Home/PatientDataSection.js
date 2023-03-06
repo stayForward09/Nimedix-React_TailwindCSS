@@ -5,7 +5,7 @@ const PatientDataSection = () => {
   return (
     <div id="patient-data-section" className="w-full bg-white py-16">
       <div className="container mx-auto text-center">
-        <p className="title text-dark lg:text-7xl md:text-5xl text-4xl mb-16">
+        <p className="title text-dark lg:text-7xl md:text-5xl text-4xl text-2xl mb-16">
           Patient Data
         </p>
         <p className="text-grey md:text-2xl text-base mb-24">

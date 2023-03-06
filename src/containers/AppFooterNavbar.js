@@ -19,12 +19,8 @@ const AppFooterNavbar = () => {
     <div id="app-footer-navbar" className="w-full bg-primary h-1/2 pt-10 pb-16">
       <div className="container mx-auto  grid md:grid-cols-2 grid-cols-1 gap-4">
         <div className="block">
-          <img
-            src={NiMEDixLogo}
-            alt="nimedix-logo"
-            className="h-12 my-4 md:mx-0 mx-auto"
-          />
-          <p className="md:w-1/2 w-full text-white my-6 text-lg">
+          <img src={NiMEDixLogo} alt="nimedix-logo" className="h-12 my-4" />
+          <p className="md:w-1/2 w-full text-white my-6 sm:text-xl text-base">
             No. 32 S. A Agada Avenue, (Police Housing Scheme) Dawaki, Kubwa.
             Abuja FCT, Nigeria
           </p>
@@ -47,7 +43,7 @@ const AppFooterNavbar = () => {
         </div>
         <div className="grid grid-cols-3">
           <div className="block">
-            <h1 className="text-2xl text-white mb-2">Pages</h1>
+            <h1 className="md:text-2xl text-xl text-white mb-2">Pages</h1>
             <NavButton
               label="Home"
               active={currentPath === 'home' || currentPath === ''}
@@ -85,7 +81,7 @@ const AppFooterNavbar = () => {
             />
           </div>
           <div>
-            <h1 className="text-3xl text-white mb-2">Support</h1>
+            <h1 className="md:text-2xl text-xl text-white mb-2">Support</h1>
             <NavButton
               label="FAQs"
               active={currentPath === 'faq'}
@@ -116,7 +112,7 @@ const AppFooterNavbar = () => {
             />
           </div>
           <div>
-            <h1 className="text-3xl text-white mb-2">Legal</h1>
+            <h1 className="md:text-2xl text-xl text-white mb-2">Legal</h1>
             <NavButton
               label="Privacy Policy"
               active={currentPath === 'privacy'}

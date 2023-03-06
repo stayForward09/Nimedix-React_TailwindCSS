@@ -13,7 +13,9 @@ const BannerSection = () => {
         className="container mx-auto bg-[url('/src/assets/images/banner/bg_banner_mobile.png')] py-16"
       >
         <div className="block md:w-1/2 w-full">
-          <p className="p-0 text-tertiary-light text-4xl mb-8">Nimedix</p>
+          <p className="p-0 text-tertiary-light lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-8 font-bold">
+            NiMEDix
+          </p>
           <p className="title text-white lg:text-7xl md:text-5xl text-4xl mb-8 break-words">
             Better healthcare with technology
           </p>
@@ -39,9 +41,8 @@ const BannerSection = () => {
           </div>
           <div className="flex items-center mb-24">
             <img src={ArrowRight} alt="arrow-icon" className="h-4" />
-            <p className="p-0 text-light mx-2">Join our waitlist</p>
+            <p className="p-0 text-light mx-2">Join our</p>
             <button
-              href="/waitlist"
               className="text-secondary underline"
               data-te-toggle="modal"
               data-te-target="#join-waitlist-modal"

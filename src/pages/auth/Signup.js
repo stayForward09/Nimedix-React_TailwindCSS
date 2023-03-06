@@ -20,7 +20,7 @@ const SignUp = () => {
         <p className="p-0 text-tertiary-light md:text-4xl text-2xl mb-8 font-bold">
           Create Account
         </p>
-        <p className="title text-white lg:text-7xl md:text-5xl xl:w-2/3 w-full text-4xl mb-8 break-words">
+        <p className="title text-white lg:text-7xl md:text-5xl text-4xl text-2xl xl:w-2/3 w-full mb-8 break-words">
           Access better healthcare with technology
         </p>
         <p className="p-0 text-grey-light sm:text-2xl text-base">

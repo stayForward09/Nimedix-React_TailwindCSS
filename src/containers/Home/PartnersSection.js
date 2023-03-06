@@ -7,12 +7,13 @@ import BoundlessPayLogo from '../../assets/images/partner/boundless_pay.png'
 import AllianceLogo from '../../assets/images/partner/alliance.png'
 import PinkSaleLogo from '../../assets/images/partner/pink_sale.png'
 import ClinicBancLogo from '../../assets/images/partner/clinic_banc.png'
+import AelexLogo from '../../assets/images/partner/aelex.png'
 
 const PartnerSection = () => {
   return (
     <div id="partner-section" className="w-full bg-white sm:py-24 py-12">
       <div className="container mx-auto text-center">
-        <p className="title lg:text-7xl md:text-5xl text-4xl text-dark my-10">
+        <p className="title lg:text-7xl md:text-5xl text-4xl text-2xl text-dark my-10">
           Our Partners
         </p>
         <p className="text-grey md:text-2xl text-base">
@@ -29,6 +30,7 @@ const PartnerSection = () => {
           <PartnerCard logo={AllianceLogo} />
           <PartnerCard logo={PinkSaleLogo} label="PinkSale" />
           <PartnerCard logo={ClinicBancLogo} label="Clinic Banc" />
+          <PartnerCard logo={AelexLogo} />
         </div>
       </div>
     </div>
