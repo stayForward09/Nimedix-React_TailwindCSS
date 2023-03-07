@@ -10,10 +10,10 @@ const DownloadSection = () => {
       <div className="container mx-auto">
         <div className="bg-primary rounded-3xl md:p-16 p-8 border-box grid md:gap-32 gap-16 lg:grid-cols-2 grid-cols-1 items-center">
           <div className="block">
-            <p className="text-secondary md:text-2xl text-xl">
+            <p className="text-secondary md:text-2xl sm:text-xl text-base">
               Ready to get started?
             </p>
-            <p className="title text-white lg:text-7xl md:text-5xl text-4xl md:text-start text-center my-10 break-words">
+            <p className="title text-white lg:text-7xl md:text-5xl text-4xl text-2xl text-start my-10 break-words">
               Download the App to start exploring
             </p>
             <p className="text-grey-light my-10 md:text-2xl text-base">

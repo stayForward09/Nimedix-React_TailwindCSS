@@ -21,13 +21,13 @@ const AppRoutes = () => {
           <Route path="services" element={<Services />} />
           <Route path="our-token" element={<OurToken />} />
           <Route path="about" element={<About />} />
+          <Route path="/login" exact element={<Login />} />
+          <Route path="/signup/" element={<Signup />}>
+            {/* <Route path="choose" element={<Choose />} /> */}
+            <Route path="" element={<Choose />} />
+            <Route path="register" element={<Register />} />
+          </Route>
           <Route path="*" element={<ComingSoon />} />
-        </Route>
-        <Route path="/login" exact element={<Login />} />
-        <Route path="/signup/" element={<Signup />}>
-          {/* <Route path="choose" element={<Choose />} /> */}
-          <Route path="" element={<Choose />} />
-          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>

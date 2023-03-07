@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
@@ -14,9 +13,5 @@ module.exports = {
     compress: true,
     port: 3000,
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.name': JSON.stringify('NiMEDix'),
-    }),
-  ],
+  plugins: [],
 }

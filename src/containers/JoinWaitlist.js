@@ -8,7 +8,7 @@ const JoinWaitlist = () => {
   return (
     <div
       data-te-modal-init
-      className="fixed top-0 left-0 z-[1055] hidden h-full w-full bg-black bg-opacity-50 flex justify-center"
+      className="fixed top-0 left-0 z-[1055] hidden h-full w-full bg-opacity-[0.5] bg-[rgba(0,0,0,0.5)] flex justify-center"
       id="join-waitlist-modal"
     >
       <div
