@@ -4,7 +4,7 @@ import EmailIcon from '../assets/images/form/sms.png'
 
 const SubscribeBar = (props) => {
   return (
-    <div className="md:w-1/2 w-full bg-grey-light rounded-full my-4 mx-auto p-2 flex flex-row justify-between gap-4">
+    <div className="lg:w-1/2 w-full bg-grey-light rounded-full my-4 mx-auto p-2 flex flex-row justify-between gap-4">
       <div className="flex items-center">
         <img src={EmailIcon} alt="searchbar-icon" className="w-6 h-6 mx-2" />
         <input

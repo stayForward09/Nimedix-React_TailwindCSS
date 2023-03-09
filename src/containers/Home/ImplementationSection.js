@@ -8,7 +8,7 @@ const ImplementationSection = () => {
         <p className="title text-dark lg:text-7xl md:text-5xl sm:text-4xl text-3xl p-0 break-words mb-8">
           Our Implementation
         </p>
-        <p className="p-0 text-grey md:text-2xl text-base break-words mb-8 md:w-3/5 w-full mx-auto">
+        <p className="p-0 text-grey lg:text-2xl md:text-xl text-base break-words mb-8 lg:w-3/5 w-full mx-auto">
           Digital healthcare can create sustainable models in terms of return on
           investment, reducing the cost of care. We promote
         </p>

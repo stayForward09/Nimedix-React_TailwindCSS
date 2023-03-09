@@ -16,13 +16,12 @@ const PartnerSection = () => {
         <p className="title lg:text-7xl md:text-5xl sm:text-4xl text-3xl text-dark my-8">
           Our Partners
         </p>
-        <p className="text-grey md:text-2xl text-base">
+        <p className="text-grey lg:text-2xl md:text-xl text-base">
           We’ve partnered with market leading providers in the medical,
-          <br />
           Artificial Intelligence and Blockchain market to build a lasting
           solution.
         </p>
-        <div className="grid sm:gap-8 gap-0 lg:grid-cols-4 md:grid-cols-2 grid-cols-2 my-8">
+        <div className="grid lg:gap-8 gap-0 md:grid-cols-4 grid-cols-2 my-8">
           <PartnerCard logo={NearLogo} />
           <PartnerCard logo={GenBankLogo} />
           <PartnerCard logo={BurstIQLogo} />

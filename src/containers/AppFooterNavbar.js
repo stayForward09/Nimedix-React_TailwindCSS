@@ -17,10 +17,10 @@ const AppFooterNavbar = () => {
 
   return (
     <div id="app-footer-navbar" className="w-full bg-primary h-1/2 pt-10 pb-16">
-      <div className="container mx-auto  grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="container mx-auto  grid lg:grid-cols-2 grid-cols-1 gap-4">
         <div className="block">
           <img src={NiMEDixLogo} alt="nimedix-logo" className="h-12 my-4" />
-          <p className="md:w-1/2 w-full text-white my-6 sm:text-xl text-sm">
+          <p className="lg:w-1/2 w-full text-white my-6 sm:text-xl text-sm">
             No. 32 S. A Agada Avenue, (Police Housing Scheme) Dawaki, Kubwa.
             Abuja FCT, Nigeria
           </p>

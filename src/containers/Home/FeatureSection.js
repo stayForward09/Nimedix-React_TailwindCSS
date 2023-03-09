@@ -42,7 +42,7 @@ const FeatureSection = () => {
           />
           <FeatureCard
             logo={WellnessLogo}
-            title="Wellness incentivisation/gamification"
+            title="Wellness incentivisation / gamification"
             description="Mine TDX tokens for wellness activities and competitions to promote good health"
           />
         </div>
