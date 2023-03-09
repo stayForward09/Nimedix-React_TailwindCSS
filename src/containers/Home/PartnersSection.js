@@ -13,16 +13,15 @@ const PartnerSection = () => {
   return (
     <div id="partner-section" className="w-full bg-white sm:py-24 py-12">
       <div className="container mx-auto text-center">
-        <p className="title lg:text-7xl md:text-5xl text-4xl text-2xl text-dark my-10">
+        <p className="title lg:text-7xl md:text-5xl sm:text-4xl text-3xl text-dark my-8">
           Our Partners
         </p>
-        <p className="text-grey md:text-2xl text-base">
+        <p className="text-grey lg:text-2xl md:text-xl text-base">
           We’ve partnered with market leading providers in the medical,
-          <br />
           Artificial Intelligence and Blockchain market to build a lasting
           solution.
         </p>
-        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 my-8">
+        <div className="grid lg:gap-8 gap-0 md:grid-cols-4 grid-cols-2 my-8">
           <PartnerCard logo={NearLogo} />
           <PartnerCard logo={GenBankLogo} />
           <PartnerCard logo={BurstIQLogo} />

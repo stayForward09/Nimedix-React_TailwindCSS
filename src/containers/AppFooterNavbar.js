@@ -17,14 +17,14 @@ const AppFooterNavbar = () => {
 
   return (
     <div id="app-footer-navbar" className="w-full bg-primary h-1/2 pt-10 pb-16">
-      <div className="container mx-auto  grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="container mx-auto  grid lg:grid-cols-2 grid-cols-1 gap-4">
         <div className="block">
           <img src={NiMEDixLogo} alt="nimedix-logo" className="h-12 my-4" />
-          <p className="md:w-1/2 w-full text-white my-6 sm:text-xl text-base">
+          <p className="lg:w-1/2 w-full text-white my-6 sm:text-xl text-sm">
             No. 32 S. A Agada Avenue, (Police Housing Scheme) Dawaki, Kubwa.
             Abuja FCT, Nigeria
           </p>
-          <div className="flex flex-row md:justify-start justify-center">
+          <div className="flex flex-row">
             <AppButton
               variant="primary"
               icon={AppStoreIconDark}
@@ -43,7 +43,9 @@ const AppFooterNavbar = () => {
         </div>
         <div className="grid grid-cols-3">
           <div className="block">
-            <h1 className="md:text-2xl text-xl text-white mb-2">Pages</h1>
+            <h1 className="md:text-2xl sm:text-xl text-base text-white mb-2">
+              Pages
+            </h1>
             <NavButton
               label="Home"
               active={currentPath === 'home' || currentPath === ''}
@@ -81,7 +83,9 @@ const AppFooterNavbar = () => {
             />
           </div>
           <div>
-            <h1 className="md:text-2xl text-xl text-white mb-2">Support</h1>
+            <h1 className="md:text-2xl sm:text-xl text-base text-white mb-2">
+              Support
+            </h1>
             <NavButton
               label="FAQs"
               active={currentPath === 'faq'}
@@ -112,7 +116,9 @@ const AppFooterNavbar = () => {
             />
           </div>
           <div>
-            <h1 className="md:text-2xl text-xl text-white mb-2">Legal</h1>
+            <h1 className="md:text-2xl sm:text-xl text-base text-white mb-2">
+              Legal
+            </h1>
             <NavButton
               label="Privacy Policy"
               active={currentPath === 'privacy'}

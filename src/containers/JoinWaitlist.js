@@ -2,26 +2,32 @@ import React, { useState } from 'react'
 import SendIcon from '../assets/images/form/arrow_right.png'
 import EmailIcon from '../assets/images/form/sms_star.png'
 
-const JoinWaitlist = () => {
+const JoinWaitlist = ({ dismiss }) => {
   const [email, setEmail] = useState('')
+
+  const handleJoin = () => {
+    console.log('joined your email address to our wait list')
+    dismiss()
+  }
 
   return (
     <div
       data-te-modal-init
-      className="fixed top-0 left-0 z-[1055] hidden h-full w-full bg-opacity-[0.5] bg-[rgba(0,0,0,0.5)] flex justify-center"
+      className="fixed top-0 left-0 h-full w-full z-[1000] bg-opacity-[0.5] bg-[rgba(0,0,0,0.2)] flex flex-col justify-center"
       id="join-waitlist-modal"
     >
       <div
         data-te-modal-dialog-ref
-        className="w-auto mx-auto sm:mt-[10%] mt-[60%] min-[576px]:max-w-[500px]"
+        className="w-auto mx-auto min-[576px]:max-w-[500px]"
       >
         <div className="relative w-full rounded-3xl bg-white">
           <div className="w-full text-end rounded-t-3xl px-4 pt-4">
             <button
               type="button"
               className="rounded-full bg-light-green p-2"
-              data-te-modal-dismiss
-              aria-label="Close"
+              onClick={() => {
+                dismiss()
+              }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +72,9 @@ const JoinWaitlist = () => {
               </div>
               <button
                 className="py-2 px-4 rounded-full bg-primary"
-                data-te-modal-dismiss
+                onClick={() => {
+                  handleJoin()
+                }}
               >
                 <div className="flex flex-direction gap-2 w-full items-center">
                   <p className="p-0 text-white">Send</p>

@@ -5,17 +5,17 @@ const PatientDataSection = () => {
   return (
     <div id="patient-data-section" className="w-full bg-white py-16">
       <div className="container mx-auto text-center">
-        <p className="title text-dark lg:text-7xl md:text-5xl text-4xl text-2xl mb-16">
+        <p className="title text-dark lg:text-7xl md:text-5xl sm:text-4xl text-3xl md:mb-16 mb-8">
           Patient Data
         </p>
-        <p className="text-grey md:text-2xl text-base mb-24">
+        <p className="text-grey lg:text-2xl md:text-xl text-base md:mb-24 mb-8">
           To better treat patients, all current patient data are converted into
           Non Fungible Tokens, Digital Twins NFT with visual summary for
           providers with live links to X- Rays, MRI’s, and other important
           patient data.
         </p>
         <img src={PatientBg} alt="patient-data-bg" className="w-full" />
-        <p className="text-grey md:text-2xl text-base mt-24">
+        <p className="text-grey lg:text-2xl md:text-xl text-base md:mt-24 mt-8">
           This new platform is positioned to become a “right-hand” for busy
           primary practice doctors, nurses and stakeholders, as well as
           emergency medical care providers that often had much less than 90
