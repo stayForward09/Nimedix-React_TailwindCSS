@@ -11,7 +11,7 @@ const ProcessSection = () => {
         </div>
         <div className="block word-wrap: break-words">
           <div className="flex space-x-1 items-center">
-            <p className="title text-dark md:text-start text-center lg:text-7xl md:text-5xl text-4xl text-2xl">
+            <p className="title text-dark md:text-start text-center lg:text-7xl md:text-5xl sm:text-4xl text-3xl">
               Our Process
             </p>
             <hr className="border-2 border-secondary sm:w-1/6 w-1/3" />
@@ -19,7 +19,7 @@ const ProcessSection = () => {
           <p className="text-grey md:text-2xl text-base my-8">
             Simplified and top-notch telemedicine health care for you.
           </p>
-          <div className="flex gap-4 my-8 items-center">
+          <div className="flex gap-4 sm:my-8 my-4 items-center">
             <img
               src={CheckIcon}
               alt="check-icon"
@@ -29,7 +29,7 @@ const ProcessSection = () => {
               Sign up on web or in-app
             </p>
           </div>
-          <div className="flex gap-4 my-8 items-center">
+          <div className="flex gap-4 sm:my-8 my-4 items-center">
             <img
               src={CheckIcon}
               alt="check-icon"
@@ -39,7 +39,7 @@ const ProcessSection = () => {
               Find a doctor & book appointment
             </p>
           </div>
-          <div className="flex gap-4 my-8 items-center">
+          <div className="flex gap-4 sm:my-8 my-4 items-center">
             <img
               src={CheckIcon}
               alt="check-icon"
@@ -49,7 +49,7 @@ const ProcessSection = () => {
               Instant payment (Fiat/Crypto)
             </p>
           </div>
-          <div className="flex gap-4 my-8 items-center">
+          <div className="flex gap-4 sm:my-8 my-4 items-center">
             <img
               src={CheckIcon}
               alt="check-icon"
@@ -59,7 +59,7 @@ const ProcessSection = () => {
               Enjoy your consultation
             </p>
           </div>
-          <div className="flex gap-4 my-8 items-center">
+          <div className="flex gap-4 sm:my-8 my-4 items-center">
             <img
               src={CheckIcon}
               alt="check-icon"

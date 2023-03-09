@@ -12,7 +12,7 @@ const AppFooter = () => {
       <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 items-center py-4">
         <p
           id="footer-copyright"
-          className="text-white md:text-start text-center"
+          className="text-white md:text-start text-center sm:text-base text-sm"
         >
           &copy;NiMEDix Ecosystem 2023. All Rights Reserved
         </p>

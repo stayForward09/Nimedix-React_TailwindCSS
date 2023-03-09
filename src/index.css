@@ -23,7 +23,7 @@
 
 #banner-section-container {
   background: #06430d;
-  background-image: url('./assets/images/banner/banner-bg.png');
+  background-image: url('./assets/images/banner/banner_bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right bottom;
@@ -37,3 +37,14 @@
   background-position: right bottom;
   background-size: contain;
 }
+
+/* @media only screen and (max-width: 640px) {
+  #banner-section-container {
+    background: #06430d;
+    background-image: url('./assets/images/banner/banner-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right bottom;
+    background-size: contain;
+  }
+} */

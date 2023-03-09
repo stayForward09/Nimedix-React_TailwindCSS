@@ -4,8 +4,8 @@ import StatusBarLogo from '../assets/images/status_bar.png'
 const StatusBar = () => {
   return (
     <div className="w-full bg-primary">
-      <div className="container mx-auto py-8 flex sm:flex-row flex-col items-center gap-8">
-        <div className="flex items-center gap-8 sm:items-center items-start">
+      <div className="container mx-auto py-8 flex sm:flex-row flex-col items-center sm:gap-8 gap-2">
+        <div className="flex sm:items-center items-start sm:gap-8 gap-2">
           <div className="rounded-full border-4 border-secondary p-1">
             <div className="rounded-full bg-white w-4 h-4"></div>
           </div>
@@ -17,7 +17,11 @@ const StatusBar = () => {
             </p>
           </div>
         </div>
-        <img src={StatusBarLogo} alt="status-bar-bg" className="w-64 h-64" />
+        <img
+          src={StatusBarLogo}
+          alt="status-bar-bg"
+          className="sm:w-72 w-full h-full"
+        />
       </div>
     </div>
   )

@@ -13,7 +13,7 @@ const NavButton = (props) => {
           : 'w-2/3 bg-transparent p-2 cursor-pointer'
       }
     >
-      <p className="p-0 text-white text-base">{props.label}</p>
+      <p className="p-0 text-white sm:text-base text-sm">{props.label}</p>
     </div>
   )
 }

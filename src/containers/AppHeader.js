@@ -11,6 +11,7 @@ const AppHeader = () => {
   const location = useLocation()
   const [onSearch, setOnSearch] = useState(false)
   const [currentPath, setCurrentPath] = useState()
+  const [searchKeyword, setSearchKeyword] = useState('')
 
   const toggle = () => {
     setOnSearch((prev) => {
@@ -24,20 +25,22 @@ const AppHeader = () => {
 
   return (
     <div id="app-header" className="w-full bg-primary text-white">
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto md:py-8 sm:6 py-4">
         <div className="grid grid-cols-3">
-          <div className="col-span-2 flex justify-between">
+          <div className="col-span-2 flex justify-between items-center">
             {/* logo */}
-            <div id="header-nav-logo">
-              <button
-                className="p-0"
-                onClick={() => {
-                  navigate('/')
-                }}
-              >
-                <img src={Logo} alt="logo-nimedix" className="h-12" />
-              </button>
-            </div>
+            <button
+              className="p-0"
+              onClick={() => {
+                navigate('/')
+              }}
+            >
+              <img
+                src={Logo}
+                alt="logo-nimedix"
+                className="md:h-12 h-auto md:w-auto w-2/3"
+              />
+            </button>
             {/* primary nav */}
             <div className="hidden lg:flex items-center">
               <HeaderNavButton
@@ -86,7 +89,7 @@ const AppHeader = () => {
                 />
               )}
             </button>
-            <hr className="border-[1px] border-grey-light border-opacity-50 h-full" />
+            <hr className="border-[1px] border-grey-light border-opacity-20 h-full" />
             <button
               className="lg:py-3 py-1 lg:px-6 px-2 text-dark bg-secondary rounded-full"
               onClick={() => {
@@ -105,9 +108,9 @@ const AppHeader = () => {
             </button>
           </div>
           {/* mobile button */}
-          <div className="lg:hidden flex items-center space-x-2 justify-end">
+          <div className="lg:hidden flex items-center space-x-3 justify-end">
             <button
-              className="md:p-2 p-1 bg-success-light rounded-full bg-opacity-10 hover:bg-opacity-50 transition duration-300"
+              className="p-2 bg-success-light rounded-full bg-opacity-10 hover:bg-opacity-50 transition duration-300"
               onClick={() => {
                 toggle()
               }}
@@ -122,8 +125,8 @@ const AppHeader = () => {
                 />
               )}
             </button>
-            <hr className="border-[1px] border-grey-light border-opacity-50 h-full" />
-            <button className="md:p-2 p-1 bg-success-light rounded-full bg-opacity-10 hover:bg-opacity-50 transition duration-300">
+            <hr className="border-[1px] border-grey-light border-opacity-20 h-full" />
+            <button className="p-2 bg-success-light rounded-full bg-opacity-10 hover:bg-opacity-50 transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -168,7 +171,14 @@ const AppHeader = () => {
           <div className="w-full h-screen bg-primary">sre</div>
         </div>
       </div> */}
-      {onSearch && <SearchBar />}
+      {onSearch && (
+        <SearchBar
+          value={searchKeyword}
+          onChangeText={(val) => {
+            setSearchKeyword(val)
+          }}
+        />
+      )}
     </div>
   )
 }

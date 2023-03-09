@@ -11,7 +11,7 @@ const FeatureSection = () => {
   return (
     <div id="feature-section" className="w-full bg-light-green py-16">
       <div className="container mx-auto text-center">
-        <p className="title text-dark lg:text-7xl md:text-5xl text-4xl text-2xl">
+        <p className="title text-dark lg:text-7xl md:text-5xl sm:text-4xl text-3xl">
           Our Key Features
         </p>
         <div className="grid gap-16 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-16">
