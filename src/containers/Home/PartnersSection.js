@@ -8,6 +8,8 @@ import AllianceLogo from '../../assets/images/partner/alliance.png'
 import PinkSaleLogo from '../../assets/images/partner/pink_sale.png'
 import ClinicBancLogo from '../../assets/images/partner/clinic_banc.png'
 import AelexLogo from '../../assets/images/partner/aelex.png'
+import SankoreLogo from '../../assets/images/partner/sankore.png'
+import NimsaLogo from '../../assets/images/partner/nimsa.png'
 
 const PartnerSection = () => {
   return (
@@ -23,13 +25,15 @@ const PartnerSection = () => {
         </p>
         <div className="grid lg:gap-8 gap-0 md:grid-cols-4 grid-cols-2 my-8">
           <PartnerCard logo={NearLogo} />
+          <PartnerCard logo={SankoreLogo} />
           <PartnerCard logo={GenBankLogo} />
-          <PartnerCard logo={BurstIQLogo} />
           <PartnerCard logo={BoundlessPayLogo} />
-          <PartnerCard logo={AllianceLogo} />
           <PartnerCard logo={PinkSaleLogo} label="PinkSale" />
+          <PartnerCard logo={AllianceLogo} />
           <PartnerCard logo={ClinicBancLogo} label="Clinic Banc" />
           <PartnerCard logo={AelexLogo} />
+          <PartnerCard logo={BurstIQLogo} />
+          <PartnerCard logo={NimsaLogo} label="NIMSA" />
         </div>
       </div>
     </div>
