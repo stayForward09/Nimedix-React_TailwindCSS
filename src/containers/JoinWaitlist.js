@@ -1,13 +1,28 @@
 import React, { useState } from 'react'
+import { addEmailToWaitList } from '../libs/apiController'
+import { emailValidation } from '../libs/utils'
 import SendIcon from '../assets/images/form/arrow_right.png'
 import EmailIcon from '../assets/images/form/sms_star.png'
 
 const JoinWaitlist = ({ dismiss }) => {
   const [email, setEmail] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
 
-  const handleJoin = () => {
-    console.log('joined your email address to our wait list')
-    dismiss()
+  const handleJoin = async () => {
+    if (emailValidation(email)) {
+      try {
+        const result = await addEmailToWaitList(email)
+        console.log(result.data)
+        setEmail('')
+      } catch (error) {
+        console.error(error)
+      }
+    } else {
+      setErrorMsg('⚠️Invalid email')
+      setTimeout(() => {
+        setErrorMsg('')
+      }, [2000])
+    }
   }
 
   return (
@@ -82,6 +97,11 @@ const JoinWaitlist = ({ dismiss }) => {
                 </div>
               </button>
             </div>
+            {errorMsg !== '' && (
+              <p className="py-0 pl-4 text-start text-danger text-base my-2">
+                {errorMsg}
+              </p>
+            )}
             <p className="p-0 text-grey text-base mt-4">
               By providing your email you agree to NiMEDix
             </p>
